@@ -18,13 +18,13 @@
 ## Oefening 2 - wiggle button
 
 - Bekijk het [eindresultaat](https://web-development-i.github.io/10SOL-Animaties/oefening02-wiggle-button/).
-- Open de startmap **oefening04-wiggle-button** in Visual Studio Code.
+- Open de startmap **oefening02-wiggle-button** in Visual Studio Code.
 - Bekijk de CSS-code. Deze bevat reeds een CSS animation 'wiggle'. Zorg ervoor dat bij het laden van de pagina de wiggle-animatie twee keer wordt uitgevoerd op de knop.
 
 ## Oefening 3 - drie bollen
 
 - Open het [eindresultaat](https://web-development-i.github.io/10SOL-Animaties/oefening03-drie-bollen/), hover over de container en wacht ... .
-- Open vervolgens de startmap **oefening02-drie-bollen** in Visual Studio Code, start de Live Server en voer onderstaande stappen uit:
+- Open vervolgens de startmap **oefening03-drie-bollen** in Visual Studio Code, start de Live Server en voer onderstaande stappen uit:
   - Vorm de vierkanten om tot bollen.
   - Gebruik de optionele alpha component van de rgb() functie om de eerste (alpha component: 40%) en de tweede knop (alpha component: 70%) gedeeltelijk transparant te maken, zodat het lijkt alsof ze een lichtere kleur hebben.
   - Bij het hoveren over de container moet de volgende animatie uitgevoerd worden:
@@ -37,7 +37,7 @@
 ## Oefening 4 - grafiek
 
 - Open het [eindresultaat](https://web-development-i.github.io/10SOL-Animaties/oefening04-grafiek/) en hover over de grafiek.
-- Open de startmap **oefening03-grafiek** in Visual Studio Code en start de Live Server.
+- Open de startmap **oefening04-grafiek** in Visual Studio Code en start de Live Server.
 - Maak de grafiekanimatie na. De waarden in de grafiek moeten bij het hoveren over de grafiek wijzigen van 100, 175 en 125 in het jaar 2020 naar de huidige waarden 250, 350 en 75.
 
 ## Oefening 5 - slide in
@@ -50,11 +50,12 @@
 
 - Open het [eindresultaat](https://web-development-i.github.io/10SOL-Animaties/oefening06-moving-text/) en hover over de blauwe box.
 - Open de startmap **oefening06-moving-text** in Visual Studio Code en zorg ervoor dat, zoals in het eindresultaat, de animatie kan afgespeeld worden door te hoveren over de blauwe box.<br>
-  **Tip** Voeg reeds bij het laden van de pagina de animatie toe aan de blauwe box, maar pauzeer ze onmiddellijk'.
+  **Tip** Voeg reeds bij het laden van de pagina de animatie toe aan de blauwe box, maar pauzeer ze onmiddellijk.
 
 ## Oefening 7 - vinyl
 
 - Bekijk het [eindresultaat](https://web-development-i.github.io/10SOL-Animaties/oefening07-vinyl/).
+- Open de startmap **oefening06-moving-text** in Visual Studio .
 - Centreer de tekst binnen het div-element horizontaal en verticaal. 
 - Maak de animatie.<br>
   **Tip** Creëer een CSS animation die de bol 360° draait en laat deze animatie oneindig lopen.
@@ -72,28 +73,34 @@
   ![dropdown1](images/dropdown1.png)
 
   - Reset de ul-elementen van het dropdown-menu. M.a.w verwijder de bullets, padding en margin.
-  - Stel voor de drie hyperlinks in het hoofdmenu:
-    - de lettergrootte in op 1,2 rem
-    - de tekstkleur in op donkergrijs: `#111`
-    - de padding in op `padding: 10px 7px`<br>
+  - Voor de drie hyperlinks in het hoofdmenu:
+    - lettergrootte: 1,2 rem
+    - tekstkleur: donkergrijs (`#111`)
+    - `padding: 10px 7px`<br>
       **Tip** `display: block`
+    - muiscursor: `default`
+    - voeg een onderstreping toe
   - Voor de hyperlinks in de submenu's:
-    - tekstkleur: donkergrijs (`#222`)
-    - padding: 10 pixels<br>
-      **Tip** `display: block`
-    - verwijder de onderstreping 
+    - Normale toestand:
+      - tekstkleur: donkergrijs (`#222`)
+      - padding: 10 pixels<br>
+        **Tip** `display: block`
+      - verwijder de onderstreping 
+    - Als er gehoverd wordt over de hyperlinks:
+      - witte tekstkleur op een blauwe achtergrond (`#006fb8`).
 
   - Als we de border-eigenschap gebruiken om de submenu's een rand te 
   geven, blijft er een rand zichtbaar als we de hoogte instellen op nul.  We maken daarom de randen met de volgende truk.
     - Stel de achtergrond van het submenu in op `darkgrey`.
     - Stel de achtergrond van de hyperlinks in op wit.
     - Geef de hyperlinks een marge van 1px. Daar marges transparant zijn, lijkt het hierdoor alsof het submenu borders heeft. 
-  - Bij het hoveren over een submenu-item zorg je voor een witte tekstkleur op een blauwe achtergrond (`#006fb8`).
+
   - Gebruik tenslotte flexbox om de drie hyperlinks in het hoofdmenu naast elkaar te plaatsen en haal de submenu's uit de 'normal flow' met `position: absolute`. Je moet nu als resultaat hetzelfde bekomen als in bovenstaande schermafbeelding.
 
   ### Deel 2
 
   - Bij het laden van de webpagina verberg je de submenu's (door voor deze elementen de 'max-height' in te stellen op 0 pixels en 'overflow' op 'hidden') en bij het hoveren over een hoofdmenu-item geef je het bijhorende submenu opnieuw weer (om een submenu opnieuw weer te geven stel je de 'max-height' in op bijvoorbeeld '200px'. In principe is 165 pixels voldoende, je kan dit controleren met de developer tools).
-  - Voeg bij de submenu's een CSS transition toe voor de property `max-height`. Zorg bierbij voor een tragere voorwaartse transitie (500ms) en een snellere achterwaartse transitie (200ms).
-  - Geef de menu-items in het hoofdmenu bij het hoveren een grijze achtergrondkleur (`#ddd)` en voorzie eventueel nog wat extra witruimte (20px) aan de linkerkant van de menu-items, behalve bij het eerste item. 
+  - Voeg bij de submenu's een CSS transition toe voor de property `max-height`. Zorg hierbij voor een tragere voorwaartse transitie (500ms) en een snellere achterwaartse transitie (200ms).
+  - Geef de menu-items in het hoofdmenu bij het hoveren een grijze achtergrondkleur (`#ddd)`. Stel deze achtergrondkleur in op de li-elementen (parents van de submenu's), zo blijft deze grijze achtergrondkleur zichtbaar bij het hoveren over de submenu's.
+  - Voorzie eventueel nog wat extra witruimte (20px) aan de linkerkant van de menu-items, behalve bij het eerste item. 
 
