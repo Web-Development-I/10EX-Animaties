@@ -55,7 +55,7 @@
 ## Oefening 7 - vinyl
 
 - Bekijk het [eindresultaat](https://web-development-i.github.io/10SOL-Animaties/oefening07-vinyl/).
-- Open de startmap **oefening06-moving-text** in Visual Studio .
+- Open de startmap **oefening07-vinyl** in Visual Studio .
 - Centreer de tekst binnen het div-element horizontaal en verticaal. 
 - Maak de animatie.<br>
   **Tip** Creëer een CSS animation die de bol 360° draait en laat deze animatie oneindig lopen.
