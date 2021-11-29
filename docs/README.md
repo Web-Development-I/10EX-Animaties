@@ -75,14 +75,14 @@
   - Reset de ul-elementen van het dropdown-menu. M.a.w verwijder de bullets, padding en margin.
   - Voor de drie hyperlinks in het hoofdmenu:
     - lettergrootte: 1,2 rem
-    - tekstkleur: donkergrijs (`#111`)
+    - tekstkleur: donkergrijs (`#222`)
     - `padding: 10px 7px`<br>
       **Tip** `display: block`
     - muiscursor: `default`
     - voeg een onderstreping toe
   - Voor de hyperlinks in de submenu's:
     - Normale toestand:
-      - tekstkleur: donkergrijs (`#222`)
+      - tekstkleur: donkergrijs (`#444`)
       - padding: 10 pixels<br>
         **Tip** `display: block`
       - verwijder de onderstreping 
@@ -101,6 +101,6 @@
 
   - Bij het laden van de webpagina verberg je de submenu's (door voor deze elementen de 'max-height' in te stellen op 0 pixels en 'overflow' op 'hidden') en bij het hoveren over een hoofdmenu-item geef je het bijhorende submenu opnieuw weer (om een submenu opnieuw weer te geven stel je de 'max-height' in op bijvoorbeeld '200px'. In principe is 165 pixels voldoende, je kan dit controleren met de developer tools).
   - Voeg bij de submenu's een CSS transition toe voor de property `max-height`. Zorg hierbij voor een tragere voorwaartse transitie (500ms) en een snellere achterwaartse transitie (200ms).
-  - Geef de menu-items in het hoofdmenu bij het hoveren een grijze achtergrondkleur (`#ddd)`. Stel deze achtergrondkleur in op de li-elementen (parents van de submenu's), zo blijft deze grijze achtergrondkleur zichtbaar bij het hoveren over de submenu's.
+  - Geef de menu-items in het hoofdmenu bij het hoveren een grijze achtergrondkleur (`#ddd)` en verwijder de onderstreping. Stel deze eigenschappen in op de li-elementen (zijn de parents van de submenu's) in plaats van op de a-elementen. Zo blijven de eigenschappen behouden bij het hoveren over de submenu's.
   - Voorzie eventueel nog wat extra witruimte (20px) aan de linkerkant van de menu-items, behalve bij het eerste item. 
 
