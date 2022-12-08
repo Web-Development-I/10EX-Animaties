@@ -29,11 +29,11 @@ body {
   margin: 40px auto;
 }
 .box1 {
-  background: rgb(60, 158, 148, 40%);
+  background: rgb(60, 158, 148);
 }
 
 .box2 {
-  background: rgb(60, 158, 148, 70%);
+  background: rgb(60, 158, 148);
 }
 
 .box3 {
